@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+*{
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 0;
+    background-color: rgba(241, 232, 232, 0.918);
+}
+.card{
+    box-shadow: 0 4px 8px red;
+    padding: 20px;
+    background-color: white;
+    
+}
+main{
+    overflow: auto;
+}
+
+
+.jumbotron{   
+    padding: 100px;
+    background-size: 100%;
+    background-image: url(assets/image/mawar_merah.jpg);
+    text-align: center;
+    color: white;
+}
+.jumbotron p{
+    font-size: 24px;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    color: red;
+    text-align: center;
+}
+header{
+    display: inline;
+}
+nav{
+    background-color: red;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+nav a{
+    font-size: 18px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: greenyellow;
+    font-weight: bold;
+ }
+
+p{
+    font-size: 16px;
+    line-height: 2em;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.container{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.box{
+    flex-grow: 1;
+
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    height: 450px;
+    width: 200px;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 20px;
+    height: 50%;
+    width: 100%;
+}
+.flex-container-row img{
+    border-radius: 20px;
+    width: 100%;
+    object-position: center;
+}
+.flex-container-row .p{
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.first{
+   border: 2px solid red;
+}
+.first img{
+    border: 4px solid red;
+}
+.second{
+    border: 2px solid rgb(247, 181, 123);
+}
+.second img{
+    border: 4px solid  rgb(247, 181, 123);
+}
+.third{
+    border: 2px solid rgb(255, 38, 0);
+}
+.third img{
+    border: 4px solid rgb(255, 38, 0);
+}
+.fourth{
+    border: 2px solid orange;
+}
+.fourth img{
+    border: 4px solid orange;
+}
+.fifth{
+    border: 2px solid grey;
+}
+.fifth img{
+    border: 4px solid grey;
+}
+.sixth{
+    border: 2px solid rgb(252, 248, 28);
+}
+.sixth img{
+    border: 4px solid rgb(252, 248, 28);
+}
+.seventh{
+    border: 2px solid blue;
+}
+.seventh img{
+    border: 4px solid blue;
+}
+.eighth{
+        border: 2px solid rgb(221, 73, 123);
+}
+.eighth img{
+    border: 4px solid rgb(221, 73, 123);
+}
+.ninth{
+    border: 2px solid rgb(116, 9, 89);
+}
+.ninth img{
+    border: 4px solid rgb(116, 9, 89);
+}
+
+
+#profile header{
+    text-align: center;
+}
+aside .container{
+    background-color: rgb(236, 218, 218);
+    border: 4px solid red;
+    border-radius: 20px;
+}
+aside h3{
+    text-align: center;
+}
+.flex-container-grow{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+}
+.flex-container-grow img{
+    border-radius: 20px;
+    border: red;
+    width: 300px;
+    height: 300px;
+}
+.flex-container-grow table{
+    height: 200px;
+    padding: 10px;
+}
+th, td{
+    text-align: justify;
+    font-size: 18px;
+    padding: 2px;
+}
+#content{
+    width: 100%;
+}
+
+
+footer{
+    padding: 20px;
+    background-color:rgb(228, 31, 31);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .jumbotron{
+        background-size: cover;
+    }
+
+    .card{
+        border-radius: 10px;
+        margin: 10px;
+    }
+   .container{
+       display: flex;
+       flex-direction: column;   
+   }
+   .box{
+        display: block;
+        margin: 20px;
+        border-radius: 20px;
+
+   }
+   .flex-container-row{
+       height: 50%;
+       width: 100%;
+       border-radius: 20px; 
+   }
+   .flex-container-row img{
+    border-radius: 20px;
+    }
+    .flex-container-row p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .flex-container-grow{
+        width: 100%;
+        height: 50%;
+        border-radius: 20px;
+    }
+    .flex-container-grow img{
+     border-radius: 20px;
+     width: 100%;
+     height: 100%;
+    }
+    th,td{
+        font-size: 15px;
+    }
+}
