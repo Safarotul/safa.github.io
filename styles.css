@@ -25,7 +25,7 @@ main{
 .jumbotron{   
     padding: 100px;
     background-size: 100%;
-    background-image: url(assets/image/mawar_merah.jpg);
+    background-image: url(mawar_merah.jpg);
     text-align: center;
     color: white;
 }
